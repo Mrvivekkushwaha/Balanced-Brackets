@@ -1,0 +1,22 @@
+for t in range(int(input())):
+    d = {"{":"}" , "[":"]" , "(":")"}
+    d1 = "({["
+    stack=[]
+    flag=0
+    for i in s:
+        if i in d1:
+            stack.append(i)
+        elif  stack and d[stack[-1]]== i: 
+            stack.pop()
+        else:
+            flag=1
+            break
+    if flag:
+        print("NO")
+    elif stack:
+        print("NO")
+    else:
+        print("YES") 
+            
+    
+     
